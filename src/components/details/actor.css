@@ -1,0 +1,17 @@
+.actor {
+  border-radius: 7px;
+  min-width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.actor-img {
+  width: 100%;
+}
+
+.actor-img img {
+  width: 100%;
+}
+

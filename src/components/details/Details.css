@@ -1,0 +1,138 @@
+.details-contentPath {
+  background-color: white;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.details-container {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.details-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: linear-gradient(to right,
+    rgba(0, 0, 0, 1), 
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+.details-poster {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+  z-index: 5;
+  margin-left: 40px;
+}
+
+.details-poster img {
+  border-radius: 10px;
+}
+
+.film-introduce {
+  position: relative;
+  z-index: 5;
+  color: white;
+  margin-left: 370px;
+  width: 70%;
+}
+
+.film-introduce-header {
+  line-height: 0%;
+}
+
+.details-order {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.details-order .vote {
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.details-order .vote:hover {
+  transform: scale(1.1);
+}
+
+.details-order .vote div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid rgb(40, 165, 96);
+}
+
+.details-body {
+  display: flex;
+  margin-top: 30px;
+}
+
+.details-body .main {
+  width: 76%;
+}
+
+.details-body .main .cast {
+  width: 93%;
+  overflow: scroll;
+  display: flex;
+  margin-left: 3%;
+}
+
+.cast::-webkit-scrollbar {
+  width: 0px;
+}
+
+.cast::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+.cast::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.details-sidebar {
+  width: 24%;
+}
+
+.main iframe {
+  margin-top: 30px;
+  width: 92%;
+  height: 500px;
+  margin-left: 4%;
+}
+
+.sub-sidebar {
+  margin-top: 30px;
+  line-height: 7px;
+}
